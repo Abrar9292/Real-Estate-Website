@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxeEstate - Luxury Real Estate Website</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top estate-navbar">
+        <div class="container">
+            <a class="navbar-brand estate-logo" href="index.html">
+                <i class="fa-solid fa-gem"></i> LuxeEstate
+            </a>
+
+            <button class="navbar-toggler menu-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="properties.html">Properties</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#agents">Agents</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#locations">Locations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+
+                <a href="contact.html" class="estate-btn">Book Visit</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-7">
+                    <span class="hero-tag">Luxury Real Estate Experience</span>
+
+                    <h1>Find A Premium Home That Matches Your Lifestyle</h1>
+
+                    <p>
+                        Explore luxury villas, premium apartments and commercial spaces with trusted
+                        property experts, verified listings and modern lifestyle features.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="properties.html" class="primary-btn">Explore Properties</a>
+                        <a href="contact.html" class="secondary-btn">Contact Agent</a>
+                    </div>
+
+                    <div class="hero-property-card">
+                        <h5>Featured Premium Villa</h5>
+                        <p>4 BHK • Private Pool • Smart Home • Pune</p>
+                        <div class="price">₹2.8 Cr</div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="luxury-card">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80"
+                            alt="Luxury Villa">
+
+                        <div class="luxury-card-content">
+                            <h4>Modern Glass Villa</h4>
+                            <p><i class="fa-solid fa-location-dot"></i> Baner, Pune</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="search-section">
+        <div class="container">
+            <div class="property-search-box">
+                <div class="row g-3 align-items-end">
+
+                    <div class="col-md-3">
+                        <label>Location</label>
+                        <input type="text" placeholder="Enter city">
+                    </div>
+
+                    <div class="col-md-3">
+                        <label>Property Type</label>
+                        <select>
+                            <option>Apartment</option>
+                            <option>Villa</option>
+                            <option>Office</option>
+                            <option>Plot</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-3">
+                        <label>Budget</label>
+                        <select>
+                            <option>₹50L - ₹1Cr</option>
+                            <option>₹1Cr - ₹3Cr</option>
+                            <option>₹3Cr - ₹5Cr</option>
+                            <option>₹5Cr+</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-3">
+                        <button>Search Property</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-section">
+        <div class="container">
+            <div class="row g-4 text-center">
+
+                <div class="col-md-3 col-6">
+                    <div class="stat-card">
+                        <h3 class="counter" data-target="950">0</h3>
+                        <p>Properties</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <div class="stat-card">
+                        <h3 class="counter" data-target="120">0</h3>
+                        <p>Agents</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <div class="stat-card">
+                        <h3 class="counter" data-target="35">0</h3>
+                        <p>Locations</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <div class="stat-card">
+                        <h3>4.9</h3>
+                        <p>Client Rating</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="properties-section">
+        <div class="container">
+
+            <div class="section-title text-center mb-5">
+                <span>Featured Properties</span>
+                <h2>Luxury Properties For Sale</h2>
+                <p>Handpicked premium properties in prime locations with modern lifestyle features.</p>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="property-card">
+                        <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=900&q=80"
+                            alt="Villa">
+                        <div class="property-content">
+                            <span>Luxury Villa</span>
+                            <h4>Modern Family Villa</h4>
+                            <p>4 Beds • 3 Baths • 2800 sqft • Private Garden</p>
+                            <div class="property-footer">
+                                <h5>₹2.8 Cr</h5>
+                                <a href="properties.html" class="property-btn">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="property-card">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80"
+                            alt="Apartment">
+                        <div class="property-content">
+                            <span>Apartment</span>
+                            <h4>Premium City Apartment</h4>
+                            <p>3 Beds • 2 Baths • 1450 sqft • Smart Security</p>
+                            <div class="property-footer">
+                                <h5>₹1.4 Cr</h5>
+                                <a href="properties.html" class="property-btn">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="property-card">
+                        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=80"
+                            alt="House">
+                        <div class="property-content">
+                            <span>Family Home</span>
+                            <h4>Elegant Family House</h4>
+                            <p>5 Beds • 4 Baths • 3200 sqft • Premium Location</p>
+                            <div class="property-footer">
+                                <h5>₹3.2 Cr</h5>
+                                <a href="properties.html" class="property-btn">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="location-section" id="locations">
+        <div class="container">
+
+            <div class="section-title text-center mb-5">
+                <span>Top Locations</span>
+                <h2>Explore Prime Locations</h2>
+                <p>Discover properties in the most demanded luxury real estate markets.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-3 col-6">
+                    <div class="location-card">
+                        <h5>Pune</h5>
+                        <p>320 Properties</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <div class="location-card">
+                        <h5>Mumbai</h5>
+                        <p>450 Properties</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <div class="location-card">
+                        <h5>Bangalore</h5>
+                        <p>280 Properties</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <div class="location-card">
+                        <h5>Hyderabad</h5>
+                        <p>210 Properties</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="agents-section" id="agents">
+        <div class="container">
+
+            <div class="section-title text-center mb-5 light-title">
+                <span>Expert Agents</span>
+                <h2>Meet Our Property Consultants</h2>
+                <p>Experienced professionals helping you choose the right property.</p>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <div class="agent-card">
+                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Agent">
+                        <h4>Rahul Mehta</h4>
+                        <p>Luxury Property Advisor</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="agent-card">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Agent">
+                        <h4>Priya Sharma</h4>
+                        <p>Residential Consultant</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="agent-card">
+                        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Agent">
+                        <h4>Aman Khan</h4>
+                        <p>Commercial Property Expert</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="testimonial-section">
+        <div class="container">
+
+            <div class="section-title text-center mb-5">
+                <span>Client Reviews</span>
+                <h2>What Our Clients Say</h2>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>Very premium experience. They helped us find a luxury villa quickly.</p>
+                        <h5>Sameer Patil</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>The website and service both look professional and trustworthy.</p>
+                        <h5>Neha Sharma</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>Excellent property options and smooth appointment booking.</p>
+                        <h5>Arjun Khan</h5>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="agent-cta">
+        <div class="container">
+            <div class="cta-box text-center">
+                <span>Need Expert Help?</span>
+                <h2>Schedule A Premium Property Consultation</h2>
+                <p>Get personalized property suggestions from experienced consultants.</p>
+                <a href="contact.html" class="primary-btn">Book Appointment</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="estate-footer">
+        <div class="container">
+
+            <div class="row g-5">
+
+                <div class="col-lg-4">
+                    <div class="footer-about">
+                        <h3>
+                            <i class="fa-solid fa-gem"></i>
+                            LuxeEstate
+                        </h3>
+
+                        <p>
+                            LuxeEstate is a premium luxury real estate platform offering modern villas,
+                            apartments and commercial properties in prime locations.
+                        </p>
+
+                        <div class="footer-socials">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="properties.html">Properties</a></li>
+                            <li><a href="#agents">Agents</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-links">
+                        <h4>Popular Locations</h4>
+
+                        <ul>
+                            <li><a href="#">Pune</a></li>
+                            <li><a href="#">Mumbai</a></li>
+                            <li><a href="#">Bangalore</a></li>
+                            <li><a href="#">Hyderabad</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="footer-contact">
+                        <h4>Contact Info</h4>
+
+                        <p><i class="fa-solid fa-phone"></i> +91 9876543210</p>
+                        <p><i class="fa-solid fa-envelope"></i> support@luxeestate.com</p>
+                        <p><i class="fa-solid fa-location-dot"></i> Pune, Maharashtra</p>
+
+                        <a href="contact.html" class="footer-btn">Schedule Visit</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 LuxeEstate. All Rights Reserved. | Luxury Real Estate Platform</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
